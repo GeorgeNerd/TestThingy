@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Super Mario Bros.</title>
+</head>
+<body>
+<iframe width="560" height="315" allow="fullscreen; autoplay; encrypted-media" src="https://games.construct.net/353/latest" frameborder="0" allowfullscreen="true" msallowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" allowpaymentrequest="false" referrerpolicy="unsafe-url" sandbox="allow-same-origin allow-forms allow-scripts allow-pointer-lock allow-orientation-lock allow-popups" scrolling="no"></iframe>
+
+<input id="SafeButton" value="Type: 'G' to enter safe mode.">
+<button id="myBtn" onclick="javascript:alert('Hello World!')">Button</button>
+
+<script>
+var input = document.getElementById("SafeButton");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "G") {
+    event.preventDefault();
+    document.getElementById("myBtn").click();
+  }
+});
+</script>
+
+</body>
+</html>
